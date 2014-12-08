@@ -1,0 +1,9 @@
+﻿Current Features
+****************
+	• Displays user avatars on memberlist
+	• Show avatar full size on hover
+	• Uses CSS transitions, no javascript!
+
+Planned Features
+****************
+	• None

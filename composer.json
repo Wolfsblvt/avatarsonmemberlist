@@ -1,0 +1,32 @@
+{
+	"name": "wolfsblvt/avatarsonmemberlist",
+	"type": "phpbb-extension",
+	"description": "Shows user avatars on memberlist.",
+	"homepage": "http://pinkes-forum.de/dev/find.php?ext=avatarsonmemberlist",
+	"version": "1.0.0",
+	"time": "2014-12-08",
+	"keywords": ["phpbb", "extension", "avatarsonmemberlist", "viewtopic", "unread"],
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Clemens Husung (Wolfsblvt)",
+			"homepage": "http://www.pinkes-forum.de/",
+			"email": "wolfsblvt@gmx.de",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"extra": {
+		"display-name": "Avatars on Memberlist",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.1.0,<3.2.*@dev"
+		},
+		"version-check": {
+			"host": "pinkes-forum.de",
+			"directory": "/dev/avatarsonmemberlist",
+			"filename": "version.json"
+		}
+	}
+}
