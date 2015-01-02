@@ -17,15 +17,6 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  */
 class listener implements EventSubscriberInterface
 {
-	/** @var \Symfony\Component\DependencyInjection\ContainerInterface */
-	protected $container;
-	
-	/** @var \phpbb\db\driver\driver_interface */
-	protected $db;
-	
-	/** @var \phpbb\config\config */
-	protected $config;
-	
 	/** @var \phpbb\path_helper */
 	protected $path_helper;
 
@@ -35,33 +26,23 @@ class listener implements EventSubscriberInterface
 	/** @var \phpbb\user */
 	protected $user;
 
-	/** @var string phpEx */
-	protected $php_ext;
-
 	/**
 	 * Constructor of event listener
 	 *
-	 * @param \phpbb\db\driver\driver_interface		$db				Database
-	 * @param \phpbb\config\config					$config			Config helper
 	 * @param \phpbb\path_helper					$path_helper	phpBB path helper
 	 * @param \phpbb\template\template				$template		Template object
 	 * @param \phpbb\user							$user			User object
-	 * @param string								$php_ext		phpEx
 	 */
-	public function __construct(\phpbb\db\driver\driver_interface $db, \phpbb\config\config $config, \phpbb\path_helper $path_helper, \phpbb\template\template $template, \phpbb\user $user, $php_ext)
+	public function __construct(\phpbb\path_helper $path_helper, \phpbb\template\template $template, \phpbb\user $user)
 	{
 		global $phpbb_container;
-		
-		$this->container = &$phpbb_container;
-		$this->db = $db;
-		$this->config = $config;
+
 		$this->path_helper = $path_helper;
 		$this->template = $template;
 		$this->user = $user;
-		$this->php_ext = $php_ext;
-		
+
 		$this->ext_root_path = 'ext/wolfsblvt/avatarsonmemberlist';
-		
+
 		// Add language vars
 		$this->user->add_lang_ext('wolfsblvt/avatarsonmemberlist', 'avatarsonmemberlist');
 	}
@@ -77,7 +58,7 @@ class listener implements EventSubscriberInterface
 			'core.page_header'				=> 'assign_template_vars',
 		);
 	}
-	
+
 	/**
 	 * Assigns template vars
 	 * 

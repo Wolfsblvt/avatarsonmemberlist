@@ -1,8 +1,10 @@
-﻿Current Features
+Current Features
 ****************
 	• Displays user avatars on memberlist
 	• Show avatar full size on hover
 	• Uses CSS transitions, no javascript!
+	• Placeholder for users without avatar
+	• Full subsilver2 support
 
 Planned Features
 ****************

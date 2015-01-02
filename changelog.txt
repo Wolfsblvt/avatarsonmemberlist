@@ -1,12 +1,17 @@
-﻿Actual Version
+Actual Version
 **************
 
--- Version 1.0.0 --------------
-	• First implementation for 3.1
-
+-- Version 1.0.2 --------------
+	• Fixed clipping issue if zoomed
+	• Included subsilver2 support
 
 ###########################################################################
 Past Versions
 *************
 
-None
+-- Version 1.0.1 --------------
+	• Added placeholder avatar for users without avatar
+	• Removed UTF8 BOM from files
+
+-- Version 1.0.0 --------------
+	• First implementation for 3.1

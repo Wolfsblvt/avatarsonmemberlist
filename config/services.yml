@@ -2,11 +2,8 @@ services:
     wolfsblvt.avatarsonmemberlist.listener:
         class: wolfsblvt\avatarsonmemberlist\event\listener
         arguments:
-            - @dbal.conn
-            - @config
             - @path_helper
             - @template
             - @user
-            - %core.php_ext%
         tags:
             - { name: event.listener }
