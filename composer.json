@@ -3,8 +3,8 @@
 	"type": "phpbb-extension",
 	"description": "Shows user avatars on memberlist.",
 	"homepage": "http://pinkes-forum.de/dev/find.php?ext=avatarsonmemberlist",
-	"version": "1.0.2",
-	"time": "2014-12-30",
+	"version": "1.0.3",
+	"time": "2015-01-02",
 	"keywords": ["phpbb", "extension", "avatarsonmemberlist", "viewtopic", "unread"],
 	"license": "GPL-2.0",
 	"authors": [
