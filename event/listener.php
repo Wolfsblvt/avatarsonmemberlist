@@ -69,7 +69,7 @@ class listener implements EventSubscriberInterface
 	{
 		$this->template->assign_vars(array(
 			'T_EXT_AVATARSONMEMBERLIST_PATH'			=> $this->path_helper->get_web_root_path() . $this->ext_root_path,
-			'T_EXT_AVATARSONMEMBERLIST_THEME_PATH'		=> $this->path_helper->get_web_root_path() . $this->ext_root_path . '/styles/' . $this->user->style['style_path'] . '/theme',
+			'T_EXT_AVATARSONMEMBERLIST_THEME_PATH'		=> $this->path_helper->get_web_root_path() . $this->ext_root_path . '/styles/all/theme',
 		));
 	}
 }
